@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link rel="shortcut icon" href="LOGO EMPRESA.jpeg" type="image/x-icon">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.productos {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.producto {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: 20px;
+    margin: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.carrito {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.descripcion-producto{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    margin: 0;
+    padding: 10px;
+
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <a style="color: white; text-decoration: none;" href="index.html"><h1>Inicio</h1></a>
+        <h1>Productos Disponibles</h1>
+    </header>
+    <div class="productos">
+        <div class="producto">
+            <img src="Casco.jpg" alt="">
+            <h2>Casco Para Motocicleta Helmet Security Color Negro</h2>
+            <p>Precio: $520.000</p>
+            <p class="descripcion-producto">Un casco equipado con GPS y sensores de daño es una innovación tecnológica que 
+                combina seguridad y ubicación en una sola solución. Este avanzado casco proporciona a 
+                los usuarios una navegación precisa a través del sistema de posicionamiento global (GPS) 
+                integrado, lo que resulta especialmente útil para actividades al aire libre, deportes de 
+                aventura y viajes. Además, sus sensores de daño monitorizan y alertan a los usuarios 
+                sobre posibles impactos o golpes, brindando una capa adicional de seguridad. Este casco inteligente 
+                representa una fusión perfecta entre la protección física y la conectividad, ofreciendo 
+                a los usuarios una experiencia más segura y consciente de su entorno.</p>
+
+            <button onclick="agregarAlCarrito('Producto 1', 520.000)">Agregar al carrito</button>
+    <div class="carrito">
+        <h1>Carrito de Compras</h1>
+        <ul id="lista-carrito">
+            <!-- Los productos seleccionados se agregarán aquí -->
+        </ul>
+        <p>Total: $<span id="total">0.00</span></p>
+    </div>
+    <script src="Carrito.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sesion</title>
+    <style>
+        body{
+            text-align: center;
+            background: url(bg.jpg);
+            height: 100vh;
+        }
+        .mapa{
+        margin: 10px;
+        padding: 10px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 700px;
+        background: transparent;
+        border: 2px solid rgba(255, 255, 255, .5);
+        backdrop-filter: blur(10px);
+        border-radius: 10%;
+        color: white;
+        }
+
+        .cerrar-sesion{
+            color: white;
+            display: flex;
+            flex-direction: column;
+            padding-left: 90%;
+        }
+    </style>
+</head>
+<body>
+    <header class="encabezado">
+        <a  href="Login.html" class="cerrar-sesion">Cerrar Sesion</a>
+    </header>
+    <div class="mapa">
+    <h1>Sesion Iniciada</h1>
+    <h2>Usuario xxx</h2>
+    <h2>Casco Encontrado En</h2>
+    <h1>MAPA</h1>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63722.66468864408!2d-76.5430503349538!3d3.431096681508022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e30a76fbac764d5%3A0x68b32949148e1ad2!2sColegio%20Compartir!5e0!3m2!1ses!2sco!4v1684714711226!5m2!1ses!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+</body>
+</html>
